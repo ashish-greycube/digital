@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:event_name",
+ "creation": "2025-03-24 16:53:02.704028",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "event_name",
+  "location",
+  "event_start_date_time",
+  "event_end_date_time",
+  "participants"
+ ],
+ "fields": [
+  {
+   "fieldname": "event_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Event Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "event_start_date_time",
+   "fieldtype": "Datetime",
+   "label": "Event Start Date Time"
+  },
+  {
+   "fieldname": "event_end_date_time",
+   "fieldtype": "Datetime",
+   "label": "Event End Date Time"
+  },
+  {
+   "fieldname": "participants",
+   "fieldtype": "Table MultiSelect",
+   "label": "Participants",
+   "options": "Participants DT"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-24 16:57:05.884830",
+ "modified_by": "Administrator",
+ "module": "Digital",
+ "name": "Event DT",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
